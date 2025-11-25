@@ -24,6 +24,12 @@
         transform: scale(0.95); }
       .ui-buttons button .material-symbols-rounded {
         font-size: 22px; margin-left: 2px;/*line-height: 0;*/}
+      #ar-button {
+        position: absolute; bottom: 20px; right: 20px; z-index: 20;
+        padding: 10px 16px; background: rgba(255,255,255,0.85);
+        color: #000; border: none; border-radius: 10px; font-size: 14px; font-weight: 600; }
+      #ar-prompt {
+        z-index: 20; }
       .HotspotAnnotation {
         background: rgba(0,0,0,0.7); padding: 6px 10px; border-radius: 6px; color: white; }
       /* Mobile layout */
@@ -31,7 +37,9 @@
         .ui-buttons { padding: 10px 16px; top: 20px; bottom: auto; left: 50%; transform: translateX(-50%); flex-direction: row; background: rgba(0,0,0,0.3); gap: 16px;}
         .ui-buttons button { padding: 0;/*10px 12px;*/ width: 52px; width: 52px; font-size: 12px; border-radius: 50%; justify-content: center;}
         .ui-buttons button .label { display: none; }
-        .ui-buttons .material-icons-outlined { font-size: 26px; } }
+        .ui-buttons .material-icons-outlined { font-size: 26px; }
+        #ar-button { bottom: 14px; right: 14px; padding: 8px 12px; font-size: 12px; border-radius: 8px; }
+      }
       /*@media (max-width: 420px) { 
         .ui-buttons { top: 12px; bottom: auto; flex-wrap: wrap; gap: 6px; width: 95%; justify-content: center; }
         .ui-buttons button { flex: 1 0 22%; padding: 10px; font-size: 11px; justify-content: center;} }*/
