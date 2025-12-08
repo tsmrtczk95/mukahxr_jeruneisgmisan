@@ -82,34 +82,8 @@
             <div class="HotspotAnnotation">Symbolic Iron Wood Jar for King &amp; Nobles</div></button>      
 <!--AUDIO SECTION -->
           <audio id="hotspot-audio"></audio>
-          <script src="components/audio-hotspot.js">/*
-            let currentButton = null;
-            let audioPlayer = null;
-            
-            window.onload = () => {
-              audioPlayer = document.getElementById("hotspot-audio");};
-            // Toggle play/pause
-            function playAudio(button) { // Get all audio elements
-              const audioSrc = button.getAttribute("data-audio");
-              // if same hotspot clicked again => toggle
-              if (currentButton === button) {
-                if (audioPlayer.paused) {
-                  audioPlayer.play();
-                } else {
-                  audioPlayer.pause();
-                }
-                return; }
-              // If switching to another hotspot → stop previous
-              if (currentButton !== null) {
-                audioPlayer.pause();
-                audioPlayer.currentTime = 0;}
-              // Load new audio
-              audioPlayer.src = audioSrc;
-              audioPlayer.play();
-              
-              currentButton = button;}*/
-            </script>
-          <!-- AUDIO SECTION ENDS -->
+          <script src="components/audio-hotspot.js"></script>
+<!-- AUDIO SECTION ENDS -->
           <div class="progress-bar hide" slot="progress-bar">
             <div class="update-bar"></div>
           </div>
@@ -129,12 +103,29 @@
       </div>
       <div id="contentBody" class="content-body"></div>
     </div>
-<!-- IMAGE POPUP UPDATE. -->
+<!-- IMAGE POPUP UPDATE. NEW 2025.12.08 --><!--
     <div id="imageModal" class="modal">
       <span class="closeBtn" onclick="closeImageModal()">&times;</span>
       <img id="popupImage" class="modal-content" />
       <div id="caption"></div>
+    </div>-->
+<!-- MULTI-IMAGE MODAL UPDATE. NEW 2025.12.08 -->
+    <div id="imageModal" class="modal">
+      <!-- Close button -->
+      <span class="closeBtn" onclick="closeGallery()">&times;</span>
+      <!-- Image container -->
+      <div class="gallery-container">
+        <img id="galleryImage" class="modal-content" />
+      </div>
+      <!-- Navigation -->
+      <div class="gallery-nav">
+        <button class="nav-btn" onclick="prevImage()">&#10094;</button>
+        <button class="nav-btn" onclick="nextImage()">&#10095;</button>
+      </div>
+      <!-- Caption -->
+      <div id="galleryCaption"></div>
     </div>
+
 <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script type="module" src="./components/ui.js"></script>
