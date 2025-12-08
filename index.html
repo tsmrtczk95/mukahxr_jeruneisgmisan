@@ -77,7 +77,9 @@
             data-position="-0.36779179279906327m 12.494410819541041m -0.41448013699034886m" 
             data-normal="-0.632198218242451m -0.08312214481036456m -0.7703350711821416m" 
             data-visibility-attribute="visible"
-            onclick="openImageModal('assets/images/sgmisan-jar.jpeg','Symbolic Wood Jar')">
+            data-audio="assets/audio/3d_jerunei_jar.mp3"
+            onclick="playAudio(this)"
+            onclick="openImageModal('assets/images/sgmisan_jar.jpeg','Symbolic Wood Jar')">
             <div class="HotspotAnnotation">Symbolic Iron Wood Jar for King &amp; Nobles</div></button>      
 <!--AUDIO SECTION -->
           <audio id="hotspot-audio"></audio>
@@ -138,22 +140,6 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script type="module" src="./components/ui.js"></script>
     <script type="module" src="./script.js"></script>
-    <script src="components/image-popup.js"></script><!--NEW-2025.12.08--><!--
-    <script>
-      function openImageModal(imageSrc, captionText = "") {
-        const modal = document.getElementById("imageModal");
-        const popupImage = document.getElementById("popupImage");
-        const caption = document.getElementById("caption");
-        
-        popupImage.src = imageSrc;
-        caption.innerText = captionText;
-        
-        modal.style.display = "block";
-      }
-      
-      function closeImageModal() {
-        document.getElementById("imageModal").style.display = "none";
-      }
-    </script>-->
+    <script src="components/image-popup.js"></script><!--NEW-2025.12.08-->
   </body>
 </html>
