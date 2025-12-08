@@ -26,9 +26,9 @@ const audioList = [
 ];
 const videoList = [
   {label:'Jerunei : Tiang Pengembumian Masyarakat Melanau',
-   src:'./assets/video/vid_jerunei_tiang.mp4'},
+   src:'./assets/video/vid_jerunei_tiang.mp4'},/*
   {label:'Demo Video',
-   src:'./assets/video/video1.mp4'}
+   src:'./assets/video/video1.mp4'}*/
 ];
 //const articleList = [{label: "Wiki: Jerunei", src:"./assets/article/wiki_jerunei.pdf", type: "pdf"}];
 
