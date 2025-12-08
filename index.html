@@ -138,5 +138,21 @@
     <script type="module" src="./components/ui.js"></script>
     <script type="module" src="./components/image-popup.js"></script><!--NEW-2025.12.08-->
     <script type="module" src="./script.js"></script>
+    <script>
+      function openImageModal(imageSrc, captionText = "") {
+        const modal = document.getElementById("imageModal");
+        const popupImage = document.getElementById("popupImage");
+        const caption = document.getElementById("caption");
+        
+        popupImage.src = imageSrc;
+        caption.innerText = captionText;
+        
+        modal.style.display = "block";
+      }
+      
+      function closeImageModal() {
+        document.getElementById("imageModal").style.display = "none";
+      }
+    </script>
   </body>
 </html>
