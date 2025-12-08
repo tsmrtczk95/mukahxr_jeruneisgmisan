@@ -201,6 +201,7 @@ model-viewer > #ar-prompt > img {
 }
 
 /*NEW-2025.12.08*/
+/*
 .modal {
   display: none;
   position: fixed;
@@ -226,3 +227,4 @@ model-viewer > #ar-prompt > img {
   color: #fff;
   margin-top: 10px;
 }
+*/
