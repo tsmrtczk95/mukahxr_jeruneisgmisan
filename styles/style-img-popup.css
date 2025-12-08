@@ -56,7 +56,8 @@
 }
 
 .gallery-nav {
-  position: absolute;
+  /*position: absolute;*/
+  position: initial;
   /*width: 100%;*/
   width: auto;
   bottom: 20%;
