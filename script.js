@@ -17,8 +17,10 @@ import { loadAudioList, loadVideoList, loadArticleText, loadPDF, loadExternalURL
 
 // Example lists - update to match your assets
 const audioList = [
+  {label:'About Jerunei', src:'./assets/audio/3d_jerunei_about.mp3'},
   {label:'About Jerunei: Body Replacement Chamber', src:'./assets/audio/about_bodychamber.mp3'},
-  {label:'About Jerunei: Carved Cavity', src:'./assets/audio/about_cavity.mp3'}
+  {label:'About Jerunei: Carved Cavity', src:'./assets/audio/about_cavity.mp3'},
+  {label:'About Jerunei: Symbolic Jar', src:'./assets/audio/3d_jerunei_jar.mp3'},
 ];
 const videoList = [
   {label:'Jerunei : Tiang Pengembumian Masyarakat Melanau',
