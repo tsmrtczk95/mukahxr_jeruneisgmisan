@@ -92,7 +92,7 @@
             <!--onclick="openGallery(['assets/images/sgmisan_jar.jpeg','assets/images/sgmisan_jar_2.png'],'Symbolic Wood Jar')">-->
             <!--data-audio="assets/audio/3d_jerunei_jar.mp3" onclick="playAudio(this)-->
             <div class="HotspotAnnotation">Symbolic Iron Wood Jar for King &amp; Nobles</div></button>      
-<!--AUDIO SECTION -->
+<!-- AUDIO SECTION -->
           <audio id="hotspot-audio"></audio>
           <script src="components/hotspot-audio.js"></script>
 <!-- AUDIO SECTION ENDS -->
@@ -115,27 +115,18 @@
       </div>
       <div id="contentBody" class="content-body"></div>
     </div>
-<!-- IMAGE POPUP UPDATE. NEW 2025.12.08 --><!--
-    <div id="imageModal" class="modal">
-      <span class="closeBtn" onclick="closeImageModal()">&times;</span>
-      <img id="popupImage" class="modal-content" />
-      <div id="caption"></div>
-    </div>-->
-<!-- MULTI-IMAGE MODAL UPDATE. NEW 2025.12.08 -->
-    <div id="imageModal" class="modal">
-      <!-- Close button -->
-      <span class="closeBtn" onclick="closeGallery()">&times;</span>
-      <!-- Image container -->
-      <div class="gallery-container">
-        <img id="galleryImage" class="modal-content" />
+<!-- MULTI IMAGE + AUDIO MODAL. NEW 2025.12.09 -->
+    <div id="mediaModal" class="modal"><!-- Combined Gallery + Audio Modal. -->
+      <span class="closeBtn" onclick="closeMedia()">&times;</span><!-- Close -->
+      <div class="gallery-container"><!-- Image container -->
+        <img id="mediaImage" class="modal-content" />
       </div>
-      <!-- Navigation -->
-      <div class="gallery-nav">
-        <button class="nav-btn" onclick="prevImage()">&#10094;</button>
-        <button class="nav-btn" onclick="nextImage()">&#10095;</button>
+      <div class="gallery-nav"><!-- Navigation -->
+        <button class="nav-btn" onclick="prevMedia()">&#10094;</button>
+        <button class="nav-btn" onclick="nextMedia()">&#10095;</button>
       </div>
-      <!-- Caption -->
-      <div id="galleryCaption"></div>
+      <div id="mediaCaption"></div><!-- Caption -->
+      <audio id="mediaAudio" controls style="display:none; margin-top:20px; width:80%;"></audio><!-- Audio player (hidden unless provided) -->
     </div>
 <!-- Loads <model-viewer> for browsers: -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
