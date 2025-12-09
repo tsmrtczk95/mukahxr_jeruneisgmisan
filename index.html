@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="./components/viewer-ui.css">
-    <link rel="stylesheet" href="./styles/spots-img.css">
-    <link rel="stylesheet" href="./styles/spot-img-aud.css">
+    <!-- <link rel="stylesheet" href="./styles/spot-img-only.css"> NEW 2025-12-08 -->
+    <link rel="stylesheet" href="./styles/spot-img-audio.css">
   </head>
   <body>
 <!-- Top Navigation Bar -->
@@ -88,7 +88,8 @@
             data-visibility-attribute="visible"
             onclick="openGallery(
               ['assets/images/sgmisan_jar.jpeg','assets/images/sgmisan_jar_2.png'],
-              ['Symbolic Wood Jar','Chosen Slave Tied to Jerunei']
+              ['Symbolic Wood Jar','Chosen Slave Tied to Jerunei'],
+              'assets/audio/3d_jerunei_jar.mp3'
             )">
             <!--onclick="openGallery(['assets/images/sgmisan_jar.jpeg','assets/images/sgmisan_jar_2.png'],'Symbolic Wood Jar')">-->
             <!--data-audio="assets/audio/3d_jerunei_jar.mp3" onclick="playAudio(this)-->
@@ -133,7 +134,8 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
     <script type="module" src="./components/ui.js"></script>
     <script type="module" src="./script.js"></script>
-    <!--<script src="components/hotspot-image.js"></script><!--NEW-2025.12.08-->
-    <script src="components/spot-img.js"></script><!--2025.12.09-->
+    <!-- <script src="components/hotspot-image.js"></script> <!--NEW-2025.12.08-->
+    <!-- <script src="components/spot-img-only.js"></script> <!--2025.12.09-->
+    <script src="components/spot-img-audio.js"></script> <!--2025.12.09-->
   </body>
 </html>
