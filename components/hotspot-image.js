@@ -1,3 +1,4 @@
+// ONE IMAGE PER HOTSPOT
 /*
 function openImageModal(imageSrc, captionText = "") {
   const modal = document.getElementById("imageModal");
@@ -14,6 +15,9 @@ function closeImageModal() {
   document.getElementById("imageModal").style.display = "none";
 }
 */
+
+
+// MULTIPLE IMAGE PER HOTSPOT
 let currentGallery = [];
 let currentIndex = 0;
 let currentCaption = "";
